@@ -1,4 +1,5 @@
 #!/bin/bash
+set -euo pipefail
 
 CONT_NAME="${1:-luma-r}"
 docker rm -f "$CONT_NAME" || true

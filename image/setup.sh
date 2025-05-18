@@ -13,9 +13,14 @@ apt-get update
 (apt-get install -y --no-install-recommends \
   fonts-ipaexfont \
   fonts-noto-cjk \
+  build-essential \
+  libcurl4-openssl-dev \
+  libssl-dev \
+  libxml2-dev \
 )
 rm -rf /var/lib/apt/lists/*
 Rscript -e "install.packages(c('readr','rmarkdown','RCurl'), repos = 'https://cran.rstudio.com')"
 Rscript -e "install.packages('tidyverse')"
 Rscript -e "install.packages('ggplot2')"
 Rscript -e "install.packages('DescTools')"
+Rscript -e "install.packages('languageserver')"
